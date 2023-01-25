@@ -75,8 +75,11 @@ select "Zone" from zones where "LocationID" = (select "DOLocationID"
 AFTER MODIFIYING THE main.tf AND variables.tf FILES, TYPE IN TERMINAL:
 
 **terraform init**
+
 **terraform plan** (INTRODUCE PROJECT ID)
+
 **terraform apply**   (INTRODUCE PROJECT ID, THEN 'yes')
+
 **terraform destroy** (TO ENSURE OF KILL THE RESOURCE)
 
 
