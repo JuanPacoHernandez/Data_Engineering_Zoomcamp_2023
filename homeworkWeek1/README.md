@@ -76,7 +76,7 @@ AFTER MODIFIYING THE main.tf AND variables.tf FILES, TYPE IN TERMINAL:
 
 **terraform init**
 
-**terraform plan** (INTRODUCE PROJECT ID)
+**terraform plan**    (INTRODUCE PROJECT ID)
 
 **terraform apply**   (INTRODUCE PROJECT ID, THEN 'yes')
 
