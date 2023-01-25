@@ -80,7 +80,7 @@ AFTER MODIFIYING THE main.tf AND variables.tf FILES, TYPE IN TERMINAL:
 
 **terraform apply**   (INTRODUCE PROJECT ID, THEN 'yes')
 
-**terraform destroy** (TO ENSURE OF KILL THE RESOURCE)
+**terraform destroy** (TO ENSURE KILL THE RESOURCE)
 
 
 
