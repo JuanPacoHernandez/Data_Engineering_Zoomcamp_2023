@@ -1,4 +1,4 @@
-# WEEK 1 HOMEWORK CODE
+# WEEK 1 HOMEWORK CODE PART A
 
 ## Q1 Knowing docker tags
 
@@ -66,6 +66,18 @@ with cte as (select "DOLocationID", tip_amount
 
 select "Zone" from zones where "LocationID" = (select "DOLocationID" 
                                                from cte);
+                                               
+                                               
+# WEEK 1 HOMEWORK CODE PART B
+
+## Q1 Creating Resources
+
+AFTER MODIFIYING THE main.tf AND variables.tf FILES, TYPE IN TERMINAL:
+
+**terraform init**
+**terraform plan** (INTRODUCE PROJECT ID)
+**terraform apply**   (INTRODUCE PROJECT ID, THEN 'yes')
+**terraform destroy** (TO ENSURE OF KILL THE RESOURCE)
 
 
 
