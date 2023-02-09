@@ -48,11 +48,11 @@ THIS GIVES US **14,851,920** OF PROCESSED ROWS
 
 CREATE THE DEPLOYMENT BUILD TO THE el_gcs_to_bq.py FILE WITH PARAMETERIZED FLOW:
 
-**prefect deployment build github_web_to_gcs.py:github_flow -n "Github EL"**
+**prefect deployment build Q4_web_to_gcs.py:main_flow --name github_storage_deploy --tag flow-storage-block -sb github/flow-storage-block -a**
 
 NEXT APPLY THE DEPLOYMENT:
 
-**prefect deployment apply github_flow-deployment.yaml**
+**prefect deployment apply main_flow-deployment.yaml**
 
 NEXT START THE AGENT, THIS CODE IS DISPLAYED IN WORK QUEUES AT UI DASHBOARD:
 
@@ -60,7 +60,7 @@ NEXT START THE AGENT, THIS CODE IS DISPLAYED IN WORK QUEUES AT UI DASHBOARD:
 
 NOW YOU CAN RUN LOCALLY THE FILE:
 
-**python3 github_web_to_gcs.py**
+**python3 Q4_web_to_gcs.py**
 
 THIS GIVES US **88605** OF PROCESSED ROWS
 

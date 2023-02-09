@@ -62,6 +62,9 @@ def main_flow() -> None:
     
     # NOTICE WHEN INGESTION FINISH
     print(f"\n\nData ingestion for {color},{year} and {month} into the postgres database has finished \n\n")
+      
+    # NOTICE FLOW WAS STORED AT GITHUB REPO
+    print(f"\n\nFlow was successfully stored at Github Repo!\n\n")
     
     
 if __name__ == '__main__':
