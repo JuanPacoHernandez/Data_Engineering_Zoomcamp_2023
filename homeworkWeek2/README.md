@@ -68,16 +68,33 @@ THIS GIVES US **88605** OF PROCESSED ROWS
 
 # Q5 Email or Slack notifications
 
-USING THE SAME DEPLOYMENT FROM Q4 BUT SETTING NEW PARAMETERS FOR green taxi, 2019, april IN THE MAIN FLOW GIVES US 
+CREATE AN AUTOMATION IN PREFECT CLOUD:
 
-**SORRY, I COULDN'T COMPLETE THIS QUESTION I PUT ANY ANSWER NOT THE RIGHT ONE**
+- Automations
+- ADD +
+- Trigger Type: Flow run state
+- NEXT
+- Action Type: Send a notification
+- Block: Add Email block:
+                     - Block name: email-notification-block
+                     - Email: Add the email destination address
+                     - CREATE
 
+THEN MAKE SURE YOUR ARE LOGIN INTO PREFECT CLOUD
+
+**prefect cloud login**
+
+RUN:
+
+**python3 Q5_web_to_gcs.py**
+
+THIS SHOWS **514392** ROWS.
 
 
 
 # Q6 Secrets
 
-THE UI DASHBOARD CREATE A 8 ASTERISKS CHARACTERS AFTER SECRET BLOCK CREATION
+IN THE UI DASHBOARD CREATE A SECRET BLOCK, INTRODUCE A PASSWORD, THEN CREATE. AND THE RECENTLY BLOCK WILL THROW 8 ASTERISKS CHARACTERS
 
 
 
