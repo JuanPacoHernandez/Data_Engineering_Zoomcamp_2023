@@ -2,11 +2,19 @@
 
 ## Q1 What is the count of records in the model fact_trips after running all models with the test run variable disabled and filtering for 2019 and 2020 data only (pickup datetime)?
 
-Considering only 2019 and 2020, just green and yellow taxi data would fit, because the requirements ask for FHV data only in 2019 year. So, considering 63,610,125 records for yellow taxi and 12,984,875 records for green taxi, throws us 76,595,000 records so the closest answer would be 71648442
+Querying with:
+
+**SELECT count(*) FROM `dtc-de-course-375103.dbt_AnalyticsProject.fact_trips`;**
+
+Throws us 76,595,000 records so the closest answer would be 71648442
 
 ## Q2 What is the distribution between service type filtering by years 2019 and 2020 data as done in the videos?
 
-Doing the analyisis, having a 76,595,000 of total records, then yellow cabs will produce 63,610,125 records then the ratio is 0.83 and the 12,984,875 records for the green cabs will produce 0.17 of ratio. Then chossing the closest answer:
+Doing the analyisis, having a 76,595,000 of total records, then yellow cabs will produce 63,610,125 records then the ratio is 0.83 and the 12,984,875 records for the green cabs will produce 0.17 of ratio. Querying the table:
+
+**SELECT sum(case when 'service_type' = 'Green' then 1 else 0 end)/count(*) as green_ratio, sum(case when `service_type` = 'Yellow' then 1 else 0 end)/count(*) as yellow_ratio FROM `dtc-de-course-375103.dbt_AnalyticsProject.fact_trips`;**
+
+Then chossing the closest answer:
 
 **89.9/10.1**
 
