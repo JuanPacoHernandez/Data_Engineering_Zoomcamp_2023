@@ -1,5 +1,19 @@
 # WEEK 4 HOMEWORK WORKSHOP
 
+I had problems running dbt with piperider, there was a No such table Error when I tried piperider run, son I ran only piperider without dbt, setting my piperider project with:
+
+**piperider init**
+
+And setting all bigquery info requested. Then I ran, to check all connections:
+
+**piperider diagnose**
+
+And finally ran:
+
+**piperider run**
+
+This produces a html file in ./piperider dir which displays the info requested.
+
 ## Q1 What is the distribution between vendor id filtering by years 2019 and 2020 data?
 
 Inspecting the vendorid column from fact_trips, piperider display a distribution 70.1/29.9/0.1. So the closets values are:
