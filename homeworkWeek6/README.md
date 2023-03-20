@@ -24,12 +24,11 @@
 - Group-Id
 - Offset
 
+## Please implement a streaming application, for finding out popularity of PUlocationID across green and fhv trip datasets. Please use the datasets fhv_tripdata_2019-01.csv.gz and green_tripdata_2019-01.csv.gz
 
 
 
 
-Twitter: https://twitter.com/jfcohh_/status/1635072053345939456
-FAQ: ?pli=1#heading=h.c1alqkbn1gw0
 
 
 
