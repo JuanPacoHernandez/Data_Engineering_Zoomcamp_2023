@@ -11,12 +11,11 @@
 
 ## Q3 Please select the Kafka concepts that support scaling 
 
-- (+) Topic Partitioning
+- Topic Partitioning
 
 ## Q4 Please select the attributes that are good candidates for partitioning key. Consider cardinality of the field you have selected and scaling aspects of your application
 
 - vendor_id
-
 
 ## Q5 Which configurations below should be provided for Kafka Consumer but not needed for Kafka Producer *
 
@@ -28,6 +27,9 @@
 
 
 
+
+Twitter: https://twitter.com/jfcohh_/status/1635072053345939456
+FAQ: ?pli=1#heading=h.c1alqkbn1gw0
 
 
 
