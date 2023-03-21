@@ -26,6 +26,14 @@
 
 ## Please implement a streaming application, for finding out popularity of PUlocationID across green and fhv trip datasets. Please use the datasets fhv_tripdata_2019-01.csv.gz and green_tripdata_2019-01.csv.gz
 
+Run producer, data dir must contains both CSV files:
+
+**python3 producer_taxi.py --input_green=/data/green_tripdata_2019-01.csv.gz --input_fhv=/data/fhv_tripdata_2019-01.csv.gz**
+
+Then consumer:
+
+**python3 consumer.py**
+
 
 
 
