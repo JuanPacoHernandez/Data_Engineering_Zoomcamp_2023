@@ -4,7 +4,7 @@ import pandas as pd
 from prefect import flow, task
 
 def set_consumer_configs():
-    config['group.id'] = 'hello_group'
+    config['group.id'] = 'taxi_group'
     config['auto.offset.reset'] = 'earliest'
     config['enable.auto.commit'] = False
     
@@ -17,7 +17,7 @@ def assignment_callback(consumer, partitions):
 if __name__ == '__main__':
     set_consumer_configs()
     consumer = Consumer(config)
-    consumer.subscribe(['taxi_csv_topic'], on_assign=assignment_callback)
+    consumer.subscribe(['fhv_csv', 'green_csv'], on_assign=assignment_callback)
     try:
         while True:
             event = consumer.poll(1.0)
@@ -28,7 +28,7 @@ if __name__ == '__main__':
             else:
                 val = event.value().decode('utf8')
                 partition = event.partition()
-                print(f'{val} received from partition {partition}    ')
+                print(f'Received: {val} from partition {partition}    ')
                 consumer.commit(event)
     except KeyboardInterrupt:
         print('Canceled by user.')
